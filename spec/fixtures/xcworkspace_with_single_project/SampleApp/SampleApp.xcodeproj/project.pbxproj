@@ -1,0 +1,1493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAE8F0641E83F55100543D33 /* SampleFrameworkA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F05B1E83F55100543D33 /* SampleFrameworkA.framework */; };
+		DAE8F0701E83F55100543D33 /* SampleFrameworkA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F05B1E83F55100543D33 /* SampleFrameworkA.framework */; };
+		DAE8F0711E83F55100543D33 /* SampleFrameworkA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F05B1E83F55100543D33 /* SampleFrameworkA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAE8F0871E83F55E00543D33 /* SampleFrameworkB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F07E1E83F55E00543D33 /* SampleFrameworkB.framework */; };
+		DAE8F0931E83F55E00543D33 /* SampleFrameworkB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F07E1E83F55E00543D33 /* SampleFrameworkB.framework */; };
+		DAE8F0941E83F55E00543D33 /* SampleFrameworkB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F07E1E83F55E00543D33 /* SampleFrameworkB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAE8F0A91E83F56900543D33 /* SampleFrameworkC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0A01E83F56900543D33 /* SampleFrameworkC.framework */; };
+		DAE8F0B51E83F56900543D33 /* SampleFrameworkC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0A01E83F56900543D33 /* SampleFrameworkC.framework */; };
+		DAE8F0B61E83F56900543D33 /* SampleFrameworkC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0A01E83F56900543D33 /* SampleFrameworkC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAE8F0CB1E83F57100543D33 /* SampleFrameworkD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0C21E83F57100543D33 /* SampleFrameworkD.framework */; };
+		DAE8F0D71E83F57100543D33 /* SampleFrameworkD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0C21E83F57100543D33 /* SampleFrameworkD.framework */; };
+		DAE8F0D81E83F57100543D33 /* SampleFrameworkD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0C21E83F57100543D33 /* SampleFrameworkD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAE8F0ED1E83F57B00543D33 /* SampleFrameworkE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0E41E83F57A00543D33 /* SampleFrameworkE.framework */; };
+		DAE8F0F91E83F57B00543D33 /* SampleFrameworkE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0E41E83F57A00543D33 /* SampleFrameworkE.framework */; };
+		DAE8F0FA1E83F57B00543D33 /* SampleFrameworkE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0E41E83F57A00543D33 /* SampleFrameworkE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAE8F1011E83F58700543D33 /* SampleFrameworkC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0A01E83F56900543D33 /* SampleFrameworkC.framework */; };
+		DAE8F1021E83F58700543D33 /* SampleFrameworkD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0C21E83F57100543D33 /* SampleFrameworkD.framework */; };
+		DAE8F1031E83F59200543D33 /* SampleFrameworkE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE8F0E41E83F57A00543D33 /* SampleFrameworkE.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAE8F0481E83F50100543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F02D1E83F50100543D33;
+			remoteInfo = SampleApp;
+		};
+		DAE8F0651E83F55100543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F05A1E83F55100543D33;
+			remoteInfo = SampleFrameworkA;
+		};
+		DAE8F0671E83F55100543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F02D1E83F50100543D33;
+			remoteInfo = SampleApp;
+		};
+		DAE8F06E1E83F55100543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F05A1E83F55100543D33;
+			remoteInfo = SampleFrameworkA;
+		};
+		DAE8F0881E83F55E00543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F07D1E83F55E00543D33;
+			remoteInfo = SampleFrameworkB;
+		};
+		DAE8F08A1E83F55E00543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F02D1E83F50100543D33;
+			remoteInfo = SampleApp;
+		};
+		DAE8F0911E83F55E00543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F07D1E83F55E00543D33;
+			remoteInfo = SampleFrameworkB;
+		};
+		DAE8F0AA1E83F56900543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F09F1E83F56900543D33;
+			remoteInfo = SampleFrameworkC;
+		};
+		DAE8F0AC1E83F56900543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F02D1E83F50100543D33;
+			remoteInfo = SampleApp;
+		};
+		DAE8F0B31E83F56900543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F09F1E83F56900543D33;
+			remoteInfo = SampleFrameworkC;
+		};
+		DAE8F0CC1E83F57100543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F0C11E83F57100543D33;
+			remoteInfo = SampleFrameworkD;
+		};
+		DAE8F0CE1E83F57100543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F02D1E83F50100543D33;
+			remoteInfo = SampleApp;
+		};
+		DAE8F0D51E83F57100543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F0C11E83F57100543D33;
+			remoteInfo = SampleFrameworkD;
+		};
+		DAE8F0EE1E83F57B00543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F0E31E83F57A00543D33;
+			remoteInfo = SampleFrameworkE;
+		};
+		DAE8F0F01E83F57B00543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F02D1E83F50100543D33;
+			remoteInfo = SampleApp;
+		};
+		DAE8F0F71E83F57B00543D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE8F0261E83F50100543D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE8F0E31E83F57A00543D33;
+			remoteInfo = SampleFrameworkE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAE8F0771E83F55100543D33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAE8F0FA1E83F57B00543D33 /* SampleFrameworkE.framework in Embed Frameworks */,
+				DAE8F0941E83F55E00543D33 /* SampleFrameworkB.framework in Embed Frameworks */,
+				DAE8F0B61E83F56900543D33 /* SampleFrameworkC.framework in Embed Frameworks */,
+				DAE8F0D81E83F57100543D33 /* SampleFrameworkD.framework in Embed Frameworks */,
+				DAE8F0711E83F55100543D33 /* SampleFrameworkA.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DAE8F02E1E83F50100543D33 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0471E83F50100543D33 /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F05B1E83F55100543D33 /* SampleFrameworkA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFrameworkA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0631E83F55100543D33 /* SampleFrameworkATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F07E1E83F55E00543D33 /* SampleFrameworkB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFrameworkB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0861E83F55E00543D33 /* SampleFrameworkBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0A01E83F56900543D33 /* SampleFrameworkC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFrameworkC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0A81E83F56900543D33 /* SampleFrameworkCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0C21E83F57100543D33 /* SampleFrameworkD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFrameworkD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0CA1E83F57100543D33 /* SampleFrameworkDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0E41E83F57A00543D33 /* SampleFrameworkE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFrameworkE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE8F0EC1E83F57B00543D33 /* SampleFrameworkETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAE8F02B1E83F50100543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F0F91E83F57B00543D33 /* SampleFrameworkE.framework in Frameworks */,
+				DAE8F0931E83F55E00543D33 /* SampleFrameworkB.framework in Frameworks */,
+				DAE8F0B51E83F56900543D33 /* SampleFrameworkC.framework in Frameworks */,
+				DAE8F0D71E83F57100543D33 /* SampleFrameworkD.framework in Frameworks */,
+				DAE8F0701E83F55100543D33 /* SampleFrameworkA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0441E83F50100543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0571E83F55100543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0601E83F55100543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F0641E83F55100543D33 /* SampleFrameworkA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F07A1E83F55E00543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F1011E83F58700543D33 /* SampleFrameworkC.framework in Frameworks */,
+				DAE8F1021E83F58700543D33 /* SampleFrameworkD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0831E83F55E00543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F0871E83F55E00543D33 /* SampleFrameworkB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F09C1E83F56900543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0A51E83F56900543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F0A91E83F56900543D33 /* SampleFrameworkC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0BE1E83F57100543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F1031E83F59200543D33 /* SampleFrameworkE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0C71E83F57100543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F0CB1E83F57100543D33 /* SampleFrameworkD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0E01E83F57A00543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0E91E83F57B00543D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE8F0ED1E83F57B00543D33 /* SampleFrameworkE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAE8F0251E83F50100543D33 = {
+			isa = PBXGroup;
+			children = (
+				DAE8F02F1E83F50100543D33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAE8F02F1E83F50100543D33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAE8F02E1E83F50100543D33 /* SampleApp.app */,
+				DAE8F0471E83F50100543D33 /* SampleAppTests.xctest */,
+				DAE8F05B1E83F55100543D33 /* SampleFrameworkA.framework */,
+				DAE8F0631E83F55100543D33 /* SampleFrameworkATests.xctest */,
+				DAE8F07E1E83F55E00543D33 /* SampleFrameworkB.framework */,
+				DAE8F0861E83F55E00543D33 /* SampleFrameworkBTests.xctest */,
+				DAE8F0A01E83F56900543D33 /* SampleFrameworkC.framework */,
+				DAE8F0A81E83F56900543D33 /* SampleFrameworkCTests.xctest */,
+				DAE8F0C21E83F57100543D33 /* SampleFrameworkD.framework */,
+				DAE8F0CA1E83F57100543D33 /* SampleFrameworkDTests.xctest */,
+				DAE8F0E41E83F57A00543D33 /* SampleFrameworkE.framework */,
+				DAE8F0EC1E83F57B00543D33 /* SampleFrameworkETests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DAE8F0581E83F55100543D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F07B1E83F55E00543D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F09D1E83F56900543D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0BF1E83F57100543D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0E11E83F57A00543D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DAE8F02D1E83F50100543D33 /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0501E83F50100543D33 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				DAE8F02A1E83F50100543D33 /* Sources */,
+				DAE8F02B1E83F50100543D33 /* Frameworks */,
+				DAE8F02C1E83F50100543D33 /* Resources */,
+				DAE8F0771E83F55100543D33 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE8F06F1E83F55100543D33 /* PBXTargetDependency */,
+				DAE8F0921E83F55E00543D33 /* PBXTargetDependency */,
+				DAE8F0B41E83F56900543D33 /* PBXTargetDependency */,
+				DAE8F0D61E83F57100543D33 /* PBXTargetDependency */,
+				DAE8F0F81E83F57B00543D33 /* PBXTargetDependency */,
+			);
+			name = SampleApp;
+			productName = SampleApp;
+			productReference = DAE8F02E1E83F50100543D33 /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAE8F0461E83F50100543D33 /* SampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0531E83F50100543D33 /* Build configuration list for PBXNativeTarget "SampleAppTests" */;
+			buildPhases = (
+				DAE8F0431E83F50100543D33 /* Sources */,
+				DAE8F0441E83F50100543D33 /* Frameworks */,
+				DAE8F0451E83F50100543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE8F0491E83F50100543D33 /* PBXTargetDependency */,
+			);
+			name = SampleAppTests;
+			productName = SampleAppTests;
+			productReference = DAE8F0471E83F50100543D33 /* SampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAE8F05A1E83F55100543D33 /* SampleFrameworkA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0761E83F55100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkA" */;
+			buildPhases = (
+				DAE8F0561E83F55100543D33 /* Sources */,
+				DAE8F0571E83F55100543D33 /* Frameworks */,
+				DAE8F0581E83F55100543D33 /* Headers */,
+				DAE8F0591E83F55100543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFrameworkA;
+			productName = SampleFrameworkA;
+			productReference = DAE8F05B1E83F55100543D33 /* SampleFrameworkA.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAE8F0621E83F55100543D33 /* SampleFrameworkATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0781E83F55100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkATests" */;
+			buildPhases = (
+				DAE8F05F1E83F55100543D33 /* Sources */,
+				DAE8F0601E83F55100543D33 /* Frameworks */,
+				DAE8F0611E83F55100543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE8F0661E83F55100543D33 /* PBXTargetDependency */,
+				DAE8F0681E83F55100543D33 /* PBXTargetDependency */,
+			);
+			name = SampleFrameworkATests;
+			productName = SampleFrameworkATests;
+			productReference = DAE8F0631E83F55100543D33 /* SampleFrameworkATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAE8F07D1E83F55E00543D33 /* SampleFrameworkB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0951E83F55E00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkB" */;
+			buildPhases = (
+				DAE8F0791E83F55E00543D33 /* Sources */,
+				DAE8F07A1E83F55E00543D33 /* Frameworks */,
+				DAE8F07B1E83F55E00543D33 /* Headers */,
+				DAE8F07C1E83F55E00543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFrameworkB;
+			productName = SampleFrameworkB;
+			productReference = DAE8F07E1E83F55E00543D33 /* SampleFrameworkB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAE8F0851E83F55E00543D33 /* SampleFrameworkBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0981E83F55E00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkBTests" */;
+			buildPhases = (
+				DAE8F0821E83F55E00543D33 /* Sources */,
+				DAE8F0831E83F55E00543D33 /* Frameworks */,
+				DAE8F0841E83F55E00543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE8F0891E83F55E00543D33 /* PBXTargetDependency */,
+				DAE8F08B1E83F55E00543D33 /* PBXTargetDependency */,
+			);
+			name = SampleFrameworkBTests;
+			productName = SampleFrameworkBTests;
+			productReference = DAE8F0861E83F55E00543D33 /* SampleFrameworkBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAE8F09F1E83F56900543D33 /* SampleFrameworkC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0B71E83F56900543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkC" */;
+			buildPhases = (
+				DAE8F09B1E83F56900543D33 /* Sources */,
+				DAE8F09C1E83F56900543D33 /* Frameworks */,
+				DAE8F09D1E83F56900543D33 /* Headers */,
+				DAE8F09E1E83F56900543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFrameworkC;
+			productName = SampleFrameworkC;
+			productReference = DAE8F0A01E83F56900543D33 /* SampleFrameworkC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAE8F0A71E83F56900543D33 /* SampleFrameworkCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0BA1E83F56900543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkCTests" */;
+			buildPhases = (
+				DAE8F0A41E83F56900543D33 /* Sources */,
+				DAE8F0A51E83F56900543D33 /* Frameworks */,
+				DAE8F0A61E83F56900543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE8F0AB1E83F56900543D33 /* PBXTargetDependency */,
+				DAE8F0AD1E83F56900543D33 /* PBXTargetDependency */,
+			);
+			name = SampleFrameworkCTests;
+			productName = SampleFrameworkCTests;
+			productReference = DAE8F0A81E83F56900543D33 /* SampleFrameworkCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAE8F0C11E83F57100543D33 /* SampleFrameworkD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0D91E83F57100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkD" */;
+			buildPhases = (
+				DAE8F0BD1E83F57100543D33 /* Sources */,
+				DAE8F0BE1E83F57100543D33 /* Frameworks */,
+				DAE8F0BF1E83F57100543D33 /* Headers */,
+				DAE8F0C01E83F57100543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFrameworkD;
+			productName = SampleFrameworkD;
+			productReference = DAE8F0C21E83F57100543D33 /* SampleFrameworkD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAE8F0C91E83F57100543D33 /* SampleFrameworkDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0DC1E83F57100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkDTests" */;
+			buildPhases = (
+				DAE8F0C61E83F57100543D33 /* Sources */,
+				DAE8F0C71E83F57100543D33 /* Frameworks */,
+				DAE8F0C81E83F57100543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE8F0CD1E83F57100543D33 /* PBXTargetDependency */,
+				DAE8F0CF1E83F57100543D33 /* PBXTargetDependency */,
+			);
+			name = SampleFrameworkDTests;
+			productName = SampleFrameworkDTests;
+			productReference = DAE8F0CA1E83F57100543D33 /* SampleFrameworkDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAE8F0E31E83F57A00543D33 /* SampleFrameworkE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0FB1E83F57B00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkE" */;
+			buildPhases = (
+				DAE8F0DF1E83F57A00543D33 /* Sources */,
+				DAE8F0E01E83F57A00543D33 /* Frameworks */,
+				DAE8F0E11E83F57A00543D33 /* Headers */,
+				DAE8F0E21E83F57A00543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFrameworkE;
+			productName = SampleFrameworkE;
+			productReference = DAE8F0E41E83F57A00543D33 /* SampleFrameworkE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAE8F0EB1E83F57B00543D33 /* SampleFrameworkETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8F0FE1E83F57B00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkETests" */;
+			buildPhases = (
+				DAE8F0E81E83F57B00543D33 /* Sources */,
+				DAE8F0E91E83F57B00543D33 /* Frameworks */,
+				DAE8F0EA1E83F57B00543D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE8F0EF1E83F57B00543D33 /* PBXTargetDependency */,
+				DAE8F0F11E83F57B00543D33 /* PBXTargetDependency */,
+			);
+			name = SampleFrameworkETests;
+			productName = SampleFrameworkETests;
+			productReference = DAE8F0EC1E83F57B00543D33 /* SampleFrameworkETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAE8F0261E83F50100543D33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "XING AG";
+				TargetAttributes = {
+					DAE8F02D1E83F50100543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAE8F0461E83F50100543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAE8F02D1E83F50100543D33;
+					};
+					DAE8F05A1E83F55100543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAE8F0621E83F55100543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAE8F02D1E83F50100543D33;
+					};
+					DAE8F07D1E83F55E00543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAE8F0851E83F55E00543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAE8F02D1E83F50100543D33;
+					};
+					DAE8F09F1E83F56900543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAE8F0A71E83F56900543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAE8F02D1E83F50100543D33;
+					};
+					DAE8F0C11E83F57100543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAE8F0C91E83F57100543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAE8F02D1E83F50100543D33;
+					};
+					DAE8F0E31E83F57A00543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAE8F0EB1E83F57B00543D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAE8F02D1E83F50100543D33;
+					};
+				};
+			};
+			buildConfigurationList = DAE8F0291E83F50100543D33 /* Build configuration list for PBXProject "SampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAE8F0251E83F50100543D33;
+			productRefGroup = DAE8F02F1E83F50100543D33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAE8F02D1E83F50100543D33 /* SampleApp */,
+				DAE8F0461E83F50100543D33 /* SampleAppTests */,
+				DAE8F05A1E83F55100543D33 /* SampleFrameworkA */,
+				DAE8F0621E83F55100543D33 /* SampleFrameworkATests */,
+				DAE8F07D1E83F55E00543D33 /* SampleFrameworkB */,
+				DAE8F0851E83F55E00543D33 /* SampleFrameworkBTests */,
+				DAE8F09F1E83F56900543D33 /* SampleFrameworkC */,
+				DAE8F0A71E83F56900543D33 /* SampleFrameworkCTests */,
+				DAE8F0C11E83F57100543D33 /* SampleFrameworkD */,
+				DAE8F0C91E83F57100543D33 /* SampleFrameworkDTests */,
+				DAE8F0E31E83F57A00543D33 /* SampleFrameworkE */,
+				DAE8F0EB1E83F57B00543D33 /* SampleFrameworkETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAE8F02C1E83F50100543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0451E83F50100543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0591E83F55100543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0611E83F55100543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F07C1E83F55E00543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0841E83F55E00543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F09E1E83F56900543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0A61E83F56900543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0C01E83F57100543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0C81E83F57100543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0E21E83F57A00543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0EA1E83F57B00543D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAE8F02A1E83F50100543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0431E83F50100543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0561E83F55100543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F05F1E83F55100543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0791E83F55E00543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0821E83F55E00543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F09B1E83F56900543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0A41E83F56900543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0BD1E83F57100543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0C61E83F57100543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0DF1E83F57A00543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F0E81E83F57B00543D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAE8F0491E83F50100543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F02D1E83F50100543D33 /* SampleApp */;
+			targetProxy = DAE8F0481E83F50100543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0661E83F55100543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F05A1E83F55100543D33 /* SampleFrameworkA */;
+			targetProxy = DAE8F0651E83F55100543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0681E83F55100543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F02D1E83F50100543D33 /* SampleApp */;
+			targetProxy = DAE8F0671E83F55100543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F06F1E83F55100543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F05A1E83F55100543D33 /* SampleFrameworkA */;
+			targetProxy = DAE8F06E1E83F55100543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0891E83F55E00543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F07D1E83F55E00543D33 /* SampleFrameworkB */;
+			targetProxy = DAE8F0881E83F55E00543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F08B1E83F55E00543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F02D1E83F50100543D33 /* SampleApp */;
+			targetProxy = DAE8F08A1E83F55E00543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0921E83F55E00543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F07D1E83F55E00543D33 /* SampleFrameworkB */;
+			targetProxy = DAE8F0911E83F55E00543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0AB1E83F56900543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F09F1E83F56900543D33 /* SampleFrameworkC */;
+			targetProxy = DAE8F0AA1E83F56900543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0AD1E83F56900543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F02D1E83F50100543D33 /* SampleApp */;
+			targetProxy = DAE8F0AC1E83F56900543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0B41E83F56900543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F09F1E83F56900543D33 /* SampleFrameworkC */;
+			targetProxy = DAE8F0B31E83F56900543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0CD1E83F57100543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F0C11E83F57100543D33 /* SampleFrameworkD */;
+			targetProxy = DAE8F0CC1E83F57100543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0CF1E83F57100543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F02D1E83F50100543D33 /* SampleApp */;
+			targetProxy = DAE8F0CE1E83F57100543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0D61E83F57100543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F0C11E83F57100543D33 /* SampleFrameworkD */;
+			targetProxy = DAE8F0D51E83F57100543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0EF1E83F57B00543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F0E31E83F57A00543D33 /* SampleFrameworkE */;
+			targetProxy = DAE8F0EE1E83F57B00543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0F11E83F57B00543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F02D1E83F50100543D33 /* SampleApp */;
+			targetProxy = DAE8F0F01E83F57B00543D33 /* PBXContainerItemProxy */;
+		};
+		DAE8F0F81E83F57B00543D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE8F0E31E83F57A00543D33 /* SampleFrameworkE */;
+			targetProxy = DAE8F0F71E83F57B00543D33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DAE8F04E1E83F50100543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAE8F04F1E83F50100543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAE8F0511E83F50100543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAE8F0521E83F50100543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAE8F0541E83F50100543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Debug;
+		};
+		DAE8F0551E83F50100543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Release;
+		};
+		DAE8F0721E83F55100543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkA/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE8F0731E83F55100543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkA/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAE8F0741E83F55100543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Debug;
+		};
+		DAE8F0751E83F55100543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Release;
+		};
+		DAE8F0961E83F55E00543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE8F0971E83F55E00543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAE8F0991E83F55E00543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Debug;
+		};
+		DAE8F09A1E83F55E00543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Release;
+		};
+		DAE8F0B81E83F56900543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE8F0B91E83F56900543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAE8F0BB1E83F56900543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Debug;
+		};
+		DAE8F0BC1E83F56900543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Release;
+		};
+		DAE8F0DA1E83F57100543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE8F0DB1E83F57100543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAE8F0DD1E83F57100543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Debug;
+		};
+		DAE8F0DE1E83F57100543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Release;
+		};
+		DAE8F0FC1E83F57B00543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkE/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE8F0FD1E83F57B00543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleFrameworkE/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAE8F0FF1E83F57B00543D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Debug;
+		};
+		DAE8F1001E83F57B00543D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleFrameworkETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xing.SampleFrameworkETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAE8F0291E83F50100543D33 /* Build configuration list for PBXProject "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F04E1E83F50100543D33 /* Debug */,
+				DAE8F04F1E83F50100543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0501E83F50100543D33 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0511E83F50100543D33 /* Debug */,
+				DAE8F0521E83F50100543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0531E83F50100543D33 /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0541E83F50100543D33 /* Debug */,
+				DAE8F0551E83F50100543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0761E83F55100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0721E83F55100543D33 /* Debug */,
+				DAE8F0731E83F55100543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0781E83F55100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0741E83F55100543D33 /* Debug */,
+				DAE8F0751E83F55100543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0951E83F55E00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0961E83F55E00543D33 /* Debug */,
+				DAE8F0971E83F55E00543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0981E83F55E00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0991E83F55E00543D33 /* Debug */,
+				DAE8F09A1E83F55E00543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0B71E83F56900543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0B81E83F56900543D33 /* Debug */,
+				DAE8F0B91E83F56900543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0BA1E83F56900543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0BB1E83F56900543D33 /* Debug */,
+				DAE8F0BC1E83F56900543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0D91E83F57100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0DA1E83F57100543D33 /* Debug */,
+				DAE8F0DB1E83F57100543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0DC1E83F57100543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0DD1E83F57100543D33 /* Debug */,
+				DAE8F0DE1E83F57100543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0FB1E83F57B00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0FC1E83F57B00543D33 /* Debug */,
+				DAE8F0FD1E83F57B00543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8F0FE1E83F57B00543D33 /* Build configuration list for PBXNativeTarget "SampleFrameworkETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE8F0FF1E83F57B00543D33 /* Debug */,
+				DAE8F1001E83F57B00543D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAE8F0261E83F50100543D33 /* Project object */;
+}
