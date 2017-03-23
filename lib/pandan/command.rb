@@ -13,6 +13,5 @@ module Pandan
     self.description = <<-DESC
       Retrieve Xcode dependency information with ease.
     DESC
-
   end
 end
