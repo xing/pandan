@@ -30,15 +30,14 @@ module Pandan
 
     def validate!
       super
-      if @xcworkspace.nil?
-        help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.'
-      end
+      help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.' unless @xcworkspace
+
       if `which tred`.empty?
-        help! 'Pandan requires GraphViz to generate the dependency graph. Please install it, e.g. with Homebrew: `brew install graphviz`.'
+        help! 'Pandan requires GraphViz to generate the dependency graph. '\
+              'Please install it, e.g. with Homebrew: `brew install graphviz`.'
       end
-      if !@save_gv && !@save_png
-        help! 'Please use at least one of --graphviz and --image.'
-      end
+
+      help! 'Please use at least one of --graphviz and --image.' if @save_gv.nil? && @save_png.nil?
     end
 
     def run

@@ -26,9 +26,8 @@ module Pandan
 
     def validate!
       super
-      if @xcworkspace.nil?
-        help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.'
-      end
+
+      help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.' unless @xcworkspace
     end
 
     def run

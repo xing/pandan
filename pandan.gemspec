@@ -9,7 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Renzo Crisóstomo', 'Kim Dung-Pham', 'Max Friedrich']
   spec.email         = ['renzo.crisostomo@xing.com', 'kim.dung-pham@xing.com', 'max.friedrich@xing.com']
   spec.summary       = 'Retrieve Xcode dependency information with ease.'
-  spec.description   = 'CLI tool that outputs dependency information from a set of Xcode projects with targets that depend on each other, it does it by creating a (reverse) dependency graph and doing a breadth-first search.'
+  spec.description   = 'CLI tool that outputs dependency information from a set of Xcode projects with targets that'\
+                       'depend on each other, it does it by creating a (reverse) dependency graph and doing a'\
+                       'breadth-first search.'
   spec.homepage = 'https://github.com/xing/pandan'
   spec.license       = 'MIT'
 

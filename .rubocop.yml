@@ -1,2 +1,10 @@
 Metrics/LineLength:
   Max: 120
+Metrics/MethodLength:
+  Max: 20
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"

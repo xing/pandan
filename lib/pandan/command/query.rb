@@ -34,12 +34,9 @@ module Pandan
 
     def validate!
       super
-      if @target.nil?
-        help! 'A target is required to retrieve the dependency information'
-      end
-      if @xcworkspace.nil?
-        help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.'
-      end
+      help! 'A target is required to retrieve the dependency information' unless @target
+
+      help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.' unless @xcworkspace
     end
 
     def run
@@ -47,7 +44,7 @@ module Pandan
       targets = parser.all_targets
       graph = Graph.new(@reverse)
       graph.add_target_info(targets)
-      deps = graph.resolve_dependencies(@target).map &:name
+      deps = graph.resolve_dependencies(@target).map(&:name)
       unless @filter.nil?
         deps.select! do |dep|
           dep.name.include? @filter
