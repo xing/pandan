@@ -68,7 +68,7 @@ module Pandan
 
       graph.nodes.each do |_, node|
         target_node = graphviz.add_node(node.name)
-        node.edges.each do |dependency|
+        node.neighbors.each do |dependency|
           dep_node = graphviz.add_node(dependency.name)
           graphviz.add_edge(target_node, dep_node)
         end
