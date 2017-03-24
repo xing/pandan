@@ -32,9 +32,10 @@ SampleFrameworkE
 SampleFrameworkD
 ```
 
-You can generate a complete dependency graph of your workspace that is output as a PNG image:
+You can generate a complete dependency graph of your workspace that is output as a PNG image. It's a good idea to exclude targets with names ending in "Tests" for a more tidy graph:
+
 ```bash
-$ pandan dependency-graph --image
+$ pandan dependency-graph --image --filter='^(?!.*Tests$).*$'
 ```
 
 ![sample_dependencies](images/sample_dependencies.png)
