@@ -5,7 +5,7 @@ module Pandan
     attr_reader :workspace, :regex
 
     def initialize(workspace_path, filter)
-      @workspace_dir = File.dirname(@workspace_path)
+      @workspace_dir = File.dirname(workspace_path)
       @workspace = Xcodeproj::Workspace.new_from_xcworkspace(workspace_path)
       @regex = filter
       @regex ||= ".*" # Match everything
