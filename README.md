@@ -37,6 +37,8 @@ You can generate a complete dependency graph of your workspace that is output as
 $ pandan dependency-graph --image
 ```
 
+![sample_dependencies](images/sample_dependencies.png)
+
 For a complete and up-to-date usage description, execute:
 
 ```bash
