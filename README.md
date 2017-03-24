@@ -1,7 +1,7 @@
 # Pandan
 
-> Pandanus amaryllifolius is a tropical plant in the Pandanus (screwpine) genus, which is commonly known as pandan leaves, and is used widely in South Asian and Southeast Asian cooking as a flavoring.
-> - [Wikipedia](https://en.wikipedia.org/wiki/Pandanus_amaryllifolius)
+> Pandanus amaryllifolius is a tropical plant in the Pandanus (screwpine) genus, which is commonly known as pandan leaves, and is used widely in South Asian and Southeast Asian cooking as a flavoring.  
+> —[Wikipedia](https://en.wikipedia.org/wiki/Pandanus_amaryllifolius)
 
 `pandan` is a CLI tool that outputs dependency information from a set of Xcode projects with targets that depend on each other, it does it by creating a (reverse) dependency graph using the information in "Link Binary with Libraries" build phase and doing a breadth-first search.
 
