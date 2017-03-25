@@ -6,13 +6,12 @@ require 'graphviz'
 
 module Pandan
   class DependencyGraph < Command
-
     def self.options
       [
         ['--xcworkspace=path/to/workspace', 'If not set, Pandan will try to find a workspace'],
         ['--graphviz', 'Outputs the dependency graph in GraphViz format'],
         ['--image', 'Outputs the dependency graph as a PNG image'],
-        ['--filter=expression', 'If set, pandan will select all targets whose name match the regular expression'],
+        ['--filter=expression', 'If set, pandan will select all targets whose name match the regular expression']
       ].concat(super)
     end
 
@@ -22,7 +21,7 @@ module Pandan
 
     def initialize(argv)
       @xcworkspace = argv.option('xcworkspace')
-      @xcworkspace ||= XCWorkspace.find_workspace()
+      @xcworkspace ||= XCWorkspace.find_workspace
       @save_gv = argv.flag?('graphviz')
       @save_png = argv.flag?('image')
       @filter = argv.option('filter')
@@ -31,20 +30,19 @@ module Pandan
 
     def validate!
       super
-      if @xcworkspace.nil?
-        help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.'
-      end
+      help! 'Could not find the workspace. Try setting it manually using the --xcworkspace option.' unless @xcworkspace
+
       if `which tred`.empty?
-        help! 'Pandan requires GraphViz to generate the dependency graph. Please install it, e.g. with Homebrew: `brew install graphviz`.'
+        help! 'Pandan requires GraphViz to generate the dependency graph. '\
+              'Please install it, e.g. with Homebrew: `brew install graphviz`.'
       end
-      if !@save_gv and !@save_png
-        help! 'Please use at least one of --graphviz and --image.'
-      end
+
+      help! 'Please use at least one of --graphviz and --image.' if @save_gv.nil? && @save_png.nil?
     end
 
     def run
       parser = Parser.new(@xcworkspace, @filter)
-      targets = parser.all_targets()
+      targets = parser.all_targets
       graph = Graph.new(false)
       graph.add_target_info(targets)
 
@@ -64,7 +62,7 @@ module Pandan
     private
 
     def graphviz_data(graph)
-      graphviz = GraphViz::new(:type => :digraph)
+      graphviz = GraphViz.new(type: :digraph)
 
       graph.nodes.each do |_, node|
         target_node = graphviz.add_node(node.name)
@@ -77,11 +75,11 @@ module Pandan
     end
 
     def save_gv(graphviz_data, filename)
-      graphviz_data.output(:dot => filename)
+      graphviz_data.output(dot: filename)
     end
 
     def save_png(graphviz_data, filename)
-      graphviz_data.output(:png => filename)
+      graphviz_data.output(png: filename)
     end
   end
 end

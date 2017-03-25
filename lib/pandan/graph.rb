@@ -13,14 +13,14 @@ module Pandan
       end
 
       def add_neighbor(node)
-        self.neighbors << node
+        neighbors << node
       end
     end
 
     attr_accessor :nodes, :reverse
 
     def initialize(reverse)
-      @nodes = Hash.new
+      @nodes = {}
       @reverse = reverse
     end
 
@@ -57,6 +57,7 @@ module Pandan
     end
 
     private
+
     def find_linked_libraries(target)
       frameworks_build_phase = target.build_phases.find { |build_phase| build_phase.isa.eql? 'PBXFrameworksBuildPhase' }
       frameworks_build_phase.files.map { |file| file.display_name.gsub '.framework', '' }
@@ -65,7 +66,7 @@ module Pandan
     def resolve(node, resolved, resolving = [])
       resolving << node
       node.neighbors.each do |neighbor|
-        if not resolved.include? neighbor
+        unless resolved.include? neighbor
           raise "Found dependency cycle: #{node.name} -> #{neighbor.name}" if resolving.include? neighbor
           resolve(neighbor, resolved, resolving)
         end
