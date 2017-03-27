@@ -1,5 +1,8 @@
 # Pandan
 
+[![Build Status](http://img.shields.io/travis/xing/pandan/master.svg?style=flat)](https://travis-ci.org/xing/pandan)
+[![Gem Version](http://img.shields.io/gem/v/pandan.svg?style=flat)](http://badge.fury.io/rb/pandan)
+
 > Pandanus amaryllifolius is a tropical plant in the Pandanus (screwpine) genus, which is commonly known as pandan leaves, and is used widely in South Asian and Southeast Asian cooking as a flavoring.  
 > —[Wikipedia](https://en.wikipedia.org/wiki/Pandanus_amaryllifolius)
 
