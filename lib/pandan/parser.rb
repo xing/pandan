@@ -13,7 +13,9 @@ module Pandan
 
     def all_targets
       all_project_paths = workspace.file_references.map(&:path)
-      projects = all_project_paths.map { |project_path| Xcodeproj::Project.open(File.expand_path(project_path, @workspace_dir)) }
+      projects = all_project_paths.map do |project_path|
+        Xcodeproj::Project.open(File.expand_path(project_path, @workspace_dir))
+      end
       projects.flat_map(&:targets).select { |target| target.name =~ /#{regex}/ }
     end
   end
