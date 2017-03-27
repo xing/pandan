@@ -5,7 +5,7 @@
 
 `pandan` is a CLI tool that outputs dependency information from a set of Xcode projects with targets that depend on each other, it does it by creating a (reverse) dependency graph using the information in "Link Binary with Libraries" build phase and doing a breadth-first search.
 
-## Installation:
+## Installation
 
 `pandan` is distributed as a Ruby gem and can be installed using the following command:
 
