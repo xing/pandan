@@ -1,11 +1,14 @@
 # Pandan
 
-> Pandanus amaryllifolius is a tropical plant in the Pandanus (screwpine) genus, which is commonly known as pandan leaves, and is used widely in South Asian and Southeast Asian cooking as a flavoring.
-> - [Wikipedia](https://en.wikipedia.org/wiki/Pandanus_amaryllifolius)
+[![Build Status](http://img.shields.io/travis/xing/pandan/master.svg?style=flat)](https://travis-ci.org/xing/pandan)
+[![Gem Version](http://img.shields.io/gem/v/pandan.svg?style=flat)](http://badge.fury.io/rb/pandan)
+
+> Pandanus amaryllifolius is a tropical plant in the Pandanus (screwpine) genus, which is commonly known as pandan leaves, and is used widely in South Asian and Southeast Asian cooking as a flavoring.  
+> —[Wikipedia](https://en.wikipedia.org/wiki/Pandanus_amaryllifolius)
 
 `pandan` is a CLI tool that outputs dependency information from a set of Xcode projects with targets that depend on each other, it does it by creating a (reverse) dependency graph using the information in "Link Binary with Libraries" build phase and doing a breadth-first search.
 
-## Installation:
+## Installation
 
 `pandan` is distributed as a Ruby gem and can be installed using the following command:
 
@@ -32,10 +35,13 @@ SampleFrameworkE
 SampleFrameworkD
 ```
 
-You can generate a complete dependency graph of your workspace that is output as a PNG image:
+You can generate a complete dependency graph of your workspace that is output as a PNG image. It's a good idea to exclude targets with names ending in "Tests" for a more tidy graph:
+
 ```bash
-$ pandan dependency-graph --image
+$ pandan dependency-graph --image --filter='^(?!.*Tests$).*$'
 ```
+
+![sample_dependencies](images/sample_dependencies.png)
 
 For a complete and up-to-date usage description, execute:
 
