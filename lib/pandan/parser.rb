@@ -2,7 +2,7 @@ require 'xcodeproj'
 
 module Pandan
   class Parser
-    attr_reader :workspace, :regex
+    attr_reader :workspace, :workspace_dir, :regex
 
     def initialize(workspace_path, filter)
       @workspace_dir = File.dirname(workspace_path)
