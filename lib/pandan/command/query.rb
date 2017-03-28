@@ -47,7 +47,7 @@ module Pandan
       deps = graph.resolve_dependencies(@target).map(&:name)
       unless @filter.nil?
         deps.select! do |dep|
-          dep.name.include? @filter
+          dep =~ /#{@filter}/
         end
       end
 
