@@ -18,7 +18,7 @@ $ gem install pandan
 
 ## Motivation
 
-At XING, CocoaPods helped us to manage our Objective-C and Swift dependencies for a long time. But as our team grew, it was evident to us that CocoaPods was not tool we needed anymore. We decided to migrate all our projects to different setup that uses multiple Xcode projects, targets and xcconfig files under a single workspace, but we were lacking a tool that would give us dependency information out of the settings that are already in place in Xcode.
+At XING, CocoaPods helped us manage our Objective-C and Swift dependencies for a long time. But as our team grew, it was evident to us that CocoaPods was not the tool we needed anymore. We decided to migrate all our projects to a different setup that uses multiple Xcode projects, targets and xcconfig files under a single workspace. However, we were lacking a tool that would give us dependency information based one the settings already in place in Xcode.
 
 ## Usage
 
