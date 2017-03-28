@@ -25,6 +25,7 @@ module Pandan
       @save_gv = argv.flag?('graphviz')
       @save_png = argv.flag?('image')
       @filter = argv.option('filter')
+      @filter ||= '.*' # Match everything
       super
     end
 

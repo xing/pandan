@@ -29,6 +29,7 @@ module Pandan
       @reverse = argv.flag?('reverse')
       @comma_separated = argv.flag?('comma-separated')
       @filter = argv.option('filter')
+      @filter ||= '.*' # Match everything
       super
     end
 
