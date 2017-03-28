@@ -46,11 +46,9 @@ module Pandan
       graph = Graph.new(@reverse)
       graph.add_target_info(targets)
       deps = graph.resolve_dependencies(@target).map(&:name)
-      unless @filter.nil?
-        deps.select! do |dep|
+      deps.select! do |dep|
           dep =~ /#{@filter}/
         end
-      end
 
       if @comma_separated
         puts deps.join ','
