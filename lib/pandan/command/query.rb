@@ -29,6 +29,7 @@ module Pandan
       @reverse = argv.flag?('reverse')
       @comma_separated = argv.flag?('comma-separated')
       @filter = argv.option('filter')
+      @filter ||= '.*' # Match everything
       super
     end
 
@@ -45,11 +46,9 @@ module Pandan
       graph = Graph.new(@reverse)
       graph.add_target_info(targets)
       deps = graph.resolve_dependencies(@target).map(&:name)
-      unless @filter.nil?
-        deps.select! do |dep|
-          dep.name.include? @filter
+      deps.select! do |dep|
+          dep =~ /#{@filter}/
         end
-      end
 
       if @comma_separated
         puts deps.join ','

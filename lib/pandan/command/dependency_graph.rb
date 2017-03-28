@@ -25,6 +25,7 @@ module Pandan
       @save_gv = argv.flag?('graphviz')
       @save_png = argv.flag?('image')
       @filter = argv.option('filter')
+      @filter ||= '.*' # Match everything
       super
     end
 
@@ -65,8 +66,10 @@ module Pandan
       graphviz = GraphViz.new(type: :digraph)
 
       graph.nodes.each do |_, node|
+        next unless node.name =~ /#{@filter}/
         target_node = graphviz.add_node(node.name)
         node.neighbors.each do |dependency|
+          next unless dependency.name =~ /#{@filter}/
           dep_node = graphviz.add_node(dependency.name)
           graphviz.add_edge(target_node, dep_node)
         end
