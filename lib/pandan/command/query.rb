@@ -47,8 +47,8 @@ module Pandan
       graph.add_target_info(targets)
       deps = graph.resolve_dependencies(@target).map(&:name)
       deps.select! do |dep|
-          dep =~ /#{@filter}/
-        end
+        dep =~ /#{@filter}/
+      end
 
       if @comma_separated
         puts deps.join ','
