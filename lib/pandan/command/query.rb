@@ -13,7 +13,7 @@ module Pandan
       [
         ['--xcworkspace=path/to/workspace', 'If not set, Pandan will try to find a workspace'],
         ['--reverse', 'If set, pandan will output the targets that depend on the argument'],
-        ['--implicit-dependencies', 'If set, pandan will look up for -l and -framework linker flags in all build configurations'],
+        ['--implicit-dependencies', 'If set, pandan will look up for linker flags in all build configurations'],
         ['--comma-separated', 'If set, Pandan outputs a comma-separated list instead of multiple lines'],
         ['--filter=expression', 'If set, pandan will select all targets whose name match the regular expression']
       ].concat(super)

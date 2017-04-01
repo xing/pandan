@@ -38,7 +38,7 @@ module Pandan
     def add_other_ld_flags_info(ld_flags_info)
       ld_flags_info.each do |target, ld_flags_per_config|
         node = node_for_target_display_name(target.display_name)
-        ld_flags_per_config.each do |config, ld_flags|
+        ld_flags_per_config.each do |_config, ld_flags|
           ld_flags.match(/-l"(.*?)"/).captures.each do |library|
             library_node = node_for_target_display_name(library)
             add_neighbor(node, library_node)
