@@ -39,11 +39,11 @@ module Pandan
       ld_flags_info.each do |target, ld_flags_per_config|
         node = node_for_target_display_name(target.display_name)
         ld_flags_per_config.each do |_config, ld_flags|
-          ld_flags.match(/-l"(.*?)"/).captures.each do |library|
+          ld_flags.join(' ').match(/-l"(.*?)"/).captures.each do |library|
             library_node = node_for_target_display_name(library)
             add_neighbor(node, library_node)
           end
-          ld_flags.match(/-framework "(.*?)"/).captures.each do |framework|
+          ld_flags.join(' ').match(/-framework "(.*?)"/).captures.each do |framework|
             framework_node = node_for_target_display_name(framework)
             add_neighbor(node, framework_node)
           end

@@ -12,7 +12,7 @@ RSpec.describe Pandan do
       graph = Pandan::Graph.new(false)
       graph.add_target_info(targets)
       dependencies = graph.resolve_dependencies('SampleFrameworkB')
-      expected_dependencies = %w(SampleFrameworkC SampleFrameworkD SampleFrameworkE)
+      expected_dependencies = %w[SampleFrameworkC SampleFrameworkD SampleFrameworkE]
       expect(dependencies.map(&:name)).to match_array expected_dependencies
     end
   end
@@ -24,7 +24,7 @@ RSpec.describe Pandan do
       graph = Pandan::Graph.new(false)
       graph.add_target_info(targets)
       dependencies = graph.resolve_dependencies('SampleFrameworkB')
-      expected_dependencies = %w(SampleFrameworkC SampleFrameworkD SampleFrameworkE)
+      expected_dependencies = %w[SampleFrameworkC SampleFrameworkD SampleFrameworkE]
       expect(dependencies.map(&:name)).to match_array expected_dependencies
     end
   end
@@ -36,7 +36,7 @@ RSpec.describe Pandan do
       graph = Pandan::Graph.new(true)
       graph.add_target_info(targets)
       dependencies = graph.resolve_dependencies('SampleFrameworkB')
-      expected_dependencies = %w(SampleApp SampleFrameworkBTests)
+      expected_dependencies = %w[SampleApp SampleFrameworkBTests]
       expect(dependencies.map(&:name)).to match_array expected_dependencies
     end
   end
@@ -72,8 +72,8 @@ RSpec.describe Pandan do
       graph = Pandan::Graph.new(false)
       graph.add_target_info(targets)
       dependencies = graph.resolve_dependencies('XNGAPIClient')
-      expected_dependencies = %w(AFNetworking CoreGraphics Foundation MobileCoreServices
-                                 SAMKeychain Security SystemConfiguration UIKit XNGOAuth1Client)
+      expected_dependencies = %w[AFNetworking CoreGraphics Foundation MobileCoreServices
+                                 SAMKeychain Security SystemConfiguration UIKit XNGOAuth1Client]
       expect(dependencies.map(&:name)).to match_array expected_dependencies
     end
   end
@@ -87,7 +87,7 @@ RSpec.describe Pandan do
       graph.add_target_info(targets)
       graph.add_other_ld_flags_info(ld_flags_info)
       dependencies = graph.resolve_dependencies('Sample')
-      expected_dependencies = %w(Baka GoogleMobileAds)
+      expected_dependencies = %w[Baka GoogleMobileAds]
       expect(dependencies.map(&:name)).to match_array expected_dependencies
     end
   end
