@@ -27,21 +27,25 @@ module Pandan
     def add_target_info(targets)
       targets.each do |target|
         linked_libraries = find_linked_libraries(target)
-        node = nodes[target.display_name]
-        if node.nil?
-          node = Node.new(target.display_name)
-          nodes[target.display_name] = node
-        end
+        node = node_for_target_display_name(target.display_name)
         linked_libraries.each do |library_name|
-          library_node = nodes[library_name]
-          if library_node.nil?
-            library_node = Node.new(library_name)
-            nodes[library_name] = library_node
+          library_node = node_for_target_display_name(library_name)
+          add_neighbor(node, library_node)
+        end
+      end
+    end
+
+    def add_other_ld_flags_info(ld_flags_info)
+      ld_flags_info.each do |target, ld_flags_per_config|
+        node = node_for_target_display_name(target.display_name)
+        ld_flags_per_config.each do |_config, ld_flags|
+          ld_flags.join(' ').match(/-l"(.*?)"/).captures.each do |library|
+            library_node = node_for_target_display_name(library)
+            add_neighbor(node, library_node)
           end
-          if reverse
-            library_node.add_neighbor(node)
-          else
-            node.add_neighbor(library_node)
+          ld_flags.join(' ').match(/-framework "(.*?)"/).captures.each do |framework|
+            framework_node = node_for_target_display_name(framework)
+            add_neighbor(node, framework_node)
           end
         end
       end
@@ -57,6 +61,23 @@ module Pandan
     end
 
     private
+
+    def node_for_target_display_name(display_name)
+      node = nodes[display_name]
+      if node.nil?
+        node = Node.new(display_name)
+        nodes[display_name] = node
+      end
+      node
+    end
+
+    def add_neighbor(source, destination)
+      if reverse
+        destination.add_neighbor(source)
+      else
+        source.add_neighbor(destination)
+      end
+    end
 
     def find_linked_libraries(target)
       frameworks_build_phase = target.build_phases.find { |build_phase| build_phase.isa.eql? 'PBXFrameworksBuildPhase' }

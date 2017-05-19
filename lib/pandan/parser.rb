@@ -12,11 +12,26 @@ module Pandan
     end
 
     def all_targets
+      @projects ||= projects
+      projects.flat_map(&:targets).select { |target| target.name =~ /#{regex}/ }
+    end
+
+    def other_linker_flags
+      @projects ||= projects
+      ld_flags_info = {}
+      projects.flat_map(&:targets).each do |target|
+        ld_flags_info[target] = target.resolved_build_setting('OTHER_LDFLAGS', true)
+      end
+      ld_flags_info
+    end
+
+    private
+
+    def projects
       all_project_paths = workspace.file_references.map(&:path)
-      projects = all_project_paths.map do |project_path|
+      all_project_paths.map do |project_path|
         Xcodeproj::Project.open(File.expand_path(project_path, @workspace_dir))
       end
-      projects.flat_map(&:targets).select { |target| target.name =~ /#{regex}/ }
     end
   end
 end
