@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pandan/command'
 require 'pandan/parser'
 require 'pandan/xcworkspace'

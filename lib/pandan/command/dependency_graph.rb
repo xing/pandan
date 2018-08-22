@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pandan/command'
 require 'pandan/parser'
 require 'pandan/graph'
@@ -65,11 +67,11 @@ module Pandan
     def graphviz_data(graph)
       graphviz = GraphViz.new(type: :digraph)
 
-      graph.nodes.each do |_, node|
-        next unless node.name =~ /#{@filter}/
+      graph.nodes.each_value do |node|
+        next unless node.name.match?(/#{@filter}/)
         target_node = graphviz.add_node(node.name)
         node.neighbors.each do |dependency|
-          next unless dependency.name =~ /#{@filter}/
+          next unless dependency.name.match?(/#{@filter}/)
           dep_node = graphviz.add_node(dependency.name)
           graphviz.add_edge(target_node, dep_node)
         end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'xcodeproj'
 require 'pandan/xcodeproj/user_interface.rb'
 
@@ -38,15 +40,10 @@ module Pandan
     def add_other_ld_flags_info(ld_flags_info)
       ld_flags_info.each do |target, ld_flags_per_config|
         node = node_for_target_display_name(target.display_name)
-        ld_flags_per_config.each do |_config, ld_flags|
-          ld_flags.join(' ').match(/-l"(.*?)"/).captures.each do |library|
-            library_node = node_for_target_display_name(library)
-            add_neighbor(node, library_node)
-          end
-          ld_flags.join(' ').match(/-framework "(.*?)"/).captures.each do |framework|
-            framework_node = node_for_target_display_name(framework)
-            add_neighbor(node, framework_node)
-          end
+        ld_flags_per_config.each_value do |ld_flags|
+          joined_flags = ld_flags.join(' ')
+          joined_flags.match(/-l"(.*?)"/).captures.each { |library| add_as_neighbor(node, library) }
+          joined_flags.match(/-framework "(.*?)"/).captures.each { |framework| add_as_neighbor(node, framework) }
         end
       end
     end
@@ -61,6 +58,10 @@ module Pandan
     end
 
     private
+
+    def add_as_neighbor(node, item)
+      add_neighbor(node, node_for_target_display_name(item))
+    end
 
     def node_for_target_display_name(display_name)
       node = nodes[display_name]
