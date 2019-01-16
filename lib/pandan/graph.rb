@@ -50,6 +50,7 @@ module Pandan
       resolved = []
       target_node = nodes[target]
       raise "Target #{target} not found" if target_node.nil?
+
       resolve(target_node, resolved)
       resolved.delete(target_node)
       resolved
@@ -97,10 +98,10 @@ module Pandan
     def resolve(node, resolved, resolving = [])
       resolving << node
       node.neighbors.each do |neighbor|
-        unless resolved.include? neighbor
-          raise "Found dependency cycle: #{node.name} -> #{neighbor.name}" if resolving.include? neighbor
-          resolve(neighbor, resolved, resolving)
-        end
+        next if @resolved.include? neighbor
+
+        raise "Found dependency cycle: #{node.name} -> #{neighbor.name}" if resolving.include? neighbor
+        resolve(neighbor, resolved, resolving)
       end
       resolved << node
       resolving.delete(node)
