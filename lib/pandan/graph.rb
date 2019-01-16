@@ -28,12 +28,10 @@ module Pandan
 
     def add_target_info(targets)
       targets.each do |target|
-        linked_libraries = find_linked_libraries(target)
         node = node_for_target_display_name(target.display_name)
-        linked_libraries.each do |library_name|
-          library_node = node_for_target_display_name(library_name)
-          add_neighbor(node, library_node)
-        end
+
+        add_to_node(node, find_linked_libraries(target))
+        add_to_node(node, find_dependencies(target))
       end
     end
 
@@ -59,6 +57,13 @@ module Pandan
 
     private
 
+    def add_to_node(root_node, names)
+      names.each do |name|
+        node = node_for_target_display_name(name)
+        add_neighbor(root_node, node)
+      end
+    end
+
     def add_as_neighbor(node, item)
       add_neighbor(node, node_for_target_display_name(item))
     end
@@ -83,6 +88,10 @@ module Pandan
     def find_linked_libraries(target)
       frameworks_build_phase = target.build_phases.find { |build_phase| build_phase.isa.eql? 'PBXFrameworksBuildPhase' }
       frameworks_build_phase.files.map { |file| file.display_name.gsub '.framework', '' }
+    end
+
+    def find_dependencies(target)
+      target.dependencies.map(&:display_name)
     end
 
     def resolve(node, resolved, resolving = [])
