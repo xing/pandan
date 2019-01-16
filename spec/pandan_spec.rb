@@ -38,7 +38,7 @@ RSpec.describe Pandan do
       graph = Pandan::Graph.new(true)
       graph.add_target_info(targets)
       dependencies = graph.resolve_dependencies('SampleFrameworkB')
-      expected_dependencies = %w[SampleApp SampleFrameworkBTests]
+      expected_dependencies = %w[SampleApp SampleAppTests SampleFrameworkBTests]
       expect(dependencies.map(&:name)).to match_array expected_dependencies
     end
   end
