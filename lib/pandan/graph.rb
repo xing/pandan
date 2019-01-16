@@ -64,7 +64,6 @@ module Pandan
       end
     end
 
-
     def add_as_neighbor(node, item)
       add_neighbor(node, node_for_target_display_name(item))
     end
