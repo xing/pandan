@@ -50,7 +50,6 @@ module Pandan
       resolved = []
       target_node = nodes[target]
       raise "Target #{target} not found" if target_node.nil?
-
       resolve(target_node, resolved)
       resolved.delete(target_node)
       resolved
@@ -64,6 +63,7 @@ module Pandan
         add_neighbor(root_node, node)
       end
     end
+
 
     def add_as_neighbor(node, item)
       add_neighbor(node, node_for_target_display_name(item))
@@ -98,7 +98,7 @@ module Pandan
     def resolve(node, resolved, resolving = [])
       resolving << node
       node.neighbors.each do |neighbor|
-        next if @resolved.include? neighbor
+        next if resolved.include? neighbor
 
         raise "Found dependency cycle: #{node.name} -> #{neighbor.name}" if resolving.include? neighbor
         resolve(neighbor, resolved, resolving)
