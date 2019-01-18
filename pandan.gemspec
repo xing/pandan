@@ -23,9 +23,9 @@ Gem::Specification.new do |spec|
   spec.executables   = 'pandan'
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'claide', '~> 1.0.0'
+  spec.add_runtime_dependency 'claide', '~> 1.0'
   spec.add_runtime_dependency 'ruby-graphviz', '~> 1.2'
-  spec.add_runtime_dependency 'xcodeproj', '~> 1.6.0'
+  spec.add_runtime_dependency 'xcodeproj', '~> 1.7'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
