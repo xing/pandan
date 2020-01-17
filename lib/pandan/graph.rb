@@ -83,6 +83,9 @@ module Pandan
 
     def find_linked_libraries(target)
       frameworks_build_phase = target.build_phases.find { |build_phase| build_phase.isa.eql? 'PBXFrameworksBuildPhase' }
+
+      return [] unless frameworks_build_phase
+
       frameworks_build_phase.files.map { |file| file.display_name.gsub '.framework', '' }
     end
 
